@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section() {
+function Section({ title, description }) {
     return (
         <Wrap>
             <ItemText>
                 <h1>
-                    Model S
+                    { title }
                 </h1>
                 <p>
-                    Order online for Touchless Delivery
+                    { description }
                 </p>
             </ItemText>
 
@@ -47,10 +47,13 @@ const ItemText = styled.div`
 padding-top: 15vw;
 text-align: center;
 `
-
+//Bottton group css
 const ButtonGroup = styled.div`
 display: flex;
 margin-bottom: 30px;
+@media (max-width: 768px){
+    flex-direction: column
+}
 `
 
 const LeftButton  = styled.div`
