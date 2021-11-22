@@ -83,5 +83,4 @@ animation: animateDown infinite 1.5s;
 `
 
 const Buttons = styled.div`
-
 `
